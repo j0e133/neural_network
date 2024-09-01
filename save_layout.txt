@@ -1,0 +1,17 @@
+
+Layout:
+
+Network
+    2 - int - name length (N)
+    N - str - name
+
+    [repeat]
+    4 - int - number of bytes in layer excluding the 4 in this value
+    2 - int - output dimensions (M)
+    2 - int - input dimensions (N)
+    1 - int - requires_grad
+    N x M x 8 - array - weights
+    M * 8 - array - biases
+
+
+
